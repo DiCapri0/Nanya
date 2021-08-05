@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortuct icon" type="image/png" href="foto/logo1.png">
+    <title>Nanya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      body {
+      background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;
+background-image: url(foto/1.png);
+
+      
+      }
+    </style>
+
+    <script type = "text/javascript">
+      function changeBg(){
+        const images = [
+          'url("foto/1.png")',
+          'url("foto/2.png")',
+          'url("foto/3.png")'
+        ]
+        const section = document.querySelector('body')
+        const bg = images[Math.floor(Math.random() * images.length)];
+        section.style.backgroundImage = bg;
+        section.style.transition = '1s ease-in-out';
+      }
+      setInterval(changeBg, 10000)
+      
+     
+  </script>
+  </head>
+  <body onload = "startTimer()">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+       <i class="fas fa-bars"></i>
+      </label>
+
+  
+     </label>
+      <label class="logo"><img src="foto/logo1.png" height="100%" style="padding: 10px;" ></img></label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="omnie.html">O mnie</a></li>
+        <li><a href="portfolio.html">Portofolio</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        
+      </ul>
+    </nav>
+  </body>
+</html>

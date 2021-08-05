@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortuct icon" type="image/png" href="foto/logo1.png">
+    <title>Nanya | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      body {
+        background-color: black;
+      }
+      #kat {
+        position: absolute;
+        width: 100%;
+        top: 150px;
+        bottom: 100px;
+       
+        border: 2px solid pink;
+        
+      }
+     #kolumna1, #kolumna2, #kolumna3 {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        text-align: center;
+        border: 2px solid yellow;
+        size: cover;
+      }
+      .kat::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#kolumna1:hover {
+  filter: blur(5px);
+}
+#kolumna2:hover {
+  filter: blur(5px);
+}
+#kolumna3:hover {
+  filter: blur(5px);
+}
+div h1{ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 40px;
+}
+    </style>
+  </head>
+  <body>
+<div id="kat">
+              <div id="kolumna1">
+                   <img src="kategorie/cosplay.jpg" alt="cosplay" style="width:100%" >
+                   <h1>Cosplay</h1>
+              </div>
+
+              <div id="kolumna2">
+                   <img src="kategorie/portret.jpg" alt="portret" style="width:100%">
+              </div>
+
+              <div id="kolumna3">
+                   <img src="kategorie/slubne.png"  alt="ślubne" style="width:100%">
+              </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src="foto/logo1.png" height="100%" style="padding: 10px;" ></img></label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="omnie.html">O mnie</a></li>
+        <li><a class="active" href="#">Portfolio</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <section></section>
+  </body>
+</html>
